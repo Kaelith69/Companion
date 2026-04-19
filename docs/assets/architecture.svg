@@ -1,0 +1,60 @@
+<svg width="100%" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Companion Architecture</title>
+  <desc id="desc">Single-client architecture with local state and simulated events.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="500" fill="#0d1117"/>
+
+  <rect x="30" y="30" width="840" height="430" rx="12" fill="none" stroke="#30363d" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <text x="50" y="58" fill="#9da7b3" font-size="14" font-family="system-ui, -apple-system, monospace">Frontend zone</text>
+
+  <rect x="60" y="92" width="260" height="96" rx="8" fill="#1f3b66" stroke="#2f5b9a"/>
+  <text x="80" y="124" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">App component</text>
+  <text x="80" y="146" fill="#d7e3f4" font-size="13" font-family="system-ui, -apple-system, monospace">Main state owner and navigation shell</text>
+
+  <rect x="350" y="92" width="250" height="96" rx="8" fill="#1f3b66" stroke="#2f5b9a"/>
+  <text x="370" y="124" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">Screen components</text>
+  <text x="370" y="146" fill="#d7e3f4" font-size="13" font-family="system-ui, -apple-system, monospace">Discover, Requests, Chats, Notifs, Profile</text>
+
+  <rect x="630" y="92" width="220" height="96" rx="8" fill="#1f3b66" stroke="#2f5b9a"/>
+  <text x="650" y="124" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">Sub-screens and modals</text>
+  <text x="650" y="146" fill="#d7e3f4" font-size="13" font-family="system-ui, -apple-system, monospace">Create, ChatRoom, Settings, Report</text>
+
+  <rect x="120" y="250" width="280" height="96" rx="8" fill="#1f5134" stroke="#2f7f52"/>
+  <text x="140" y="282" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">Local data stores</text>
+  <text x="140" y="304" fill="#d8f3e2" font-size="13" font-family="system-ui, -apple-system, monospace">USERS, INIT_REQS, INIT_CHATS, INIT_NOTIFS</text>
+
+  <rect x="450" y="250" width="220" height="96" rx="8" fill="#6a4a1d" stroke="#a1732d"/>
+  <text x="470" y="282" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">Event simulation</text>
+  <text x="470" y="304" fill="#ffe6bf" font-size="13" font-family="system-ui, -apple-system, monospace">setTimeout and TTL interval timers</text>
+
+  <rect x="700" y="250" width="150" height="96" rx="8" fill="#51366d" stroke="#7b56a6"/>
+  <text x="720" y="282" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">Auth gate</text>
+  <text x="720" y="304" fill="#e8d9ff" font-size="13" font-family="system-ui, -apple-system, monospace">Local screen switch</text>
+
+  <rect x="320" y="380" width="260" height="56" rx="8" fill="#30363d" stroke="#484f58"/>
+  <text x="340" y="414" fill="#f0f6fc" font-size="14" font-family="system-ui, -apple-system, monospace">No external backend or database in repo</text>
+
+  <line x1="320" y1="140" x2="350" y2="140" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="324" y="132" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">Props and callbacks</text>
+
+  <line x1="600" y1="140" x2="630" y2="140" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="590" y="132" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">Route state</text>
+
+  <line x1="220" y1="188" x2="220" y2="250" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="228" y="220" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">Read and write</text>
+
+  <line x1="475" y1="188" x2="550" y2="250" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="218" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">UI actions</text>
+
+  <line x1="740" y1="188" x2="770" y2="250" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="750" y="218" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">Login state</text>
+
+  <line x1="560" y1="346" x2="560" y2="380" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="346" x2="380" y2="380" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

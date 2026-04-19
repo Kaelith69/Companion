@@ -1,0 +1,54 @@
+<svg width="100%" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Companion Request Flow</title>
+  <desc id="desc">Primary flow for discovering and joining an activity request.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9da7b3"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="420" fill="#0d1117"/>
+
+  <rect x="320" y="26" width="260" height="56" rx="8" fill="#0d5f5b" stroke="#22a39a"/>
+  <text x="450" y="60" text-anchor="middle" fill="#e9fffc" font-size="14" font-family="system-ui, -apple-system, monospace">Open app and enter Discover screen</text>
+
+  <rect x="320" y="106" width="260" height="56" rx="8" fill="#0d5f5b" stroke="#22a39a"/>
+  <text x="450" y="140" text-anchor="middle" fill="#e9fffc" font-size="14" font-family="system-ui, -apple-system, monospace">Browse map pins and request details</text>
+
+  <g transform="translate(450,214)">
+    <rect x="-54" y="-54" width="108" height="108" fill="#7a5818" stroke="#d39a2a" transform="rotate(45)"/>
+    <text x="0" y="-4" text-anchor="middle" fill="#fff3d8" font-size="14" font-family="system-ui, -apple-system, monospace">Join</text>
+    <text x="0" y="16" text-anchor="middle" fill="#fff3d8" font-size="14" font-family="system-ui, -apple-system, monospace">available?</text>
+  </g>
+
+  <rect x="90" y="288" width="250" height="56" rx="8" fill="#6f2f2f" stroke="#df6a6a"/>
+  <text x="215" y="322" text-anchor="middle" fill="#ffeaea" font-size="14" font-family="system-ui, -apple-system, monospace">Show Pending, Full, or Expired state</text>
+
+  <rect x="560" y="288" width="250" height="56" rx="8" fill="#0d5f5b" stroke="#22a39a"/>
+  <text x="685" y="322" text-anchor="middle" fill="#e9fffc" font-size="14" font-family="system-ui, -apple-system, monospace">Send join request and notify host</text>
+
+  <g transform="translate(685,388)">
+    <rect x="-44" y="-44" width="88" height="88" fill="#7a5818" stroke="#d39a2a" transform="rotate(45)"/>
+    <text x="0" y="4" text-anchor="middle" fill="#fff3d8" font-size="14" font-family="system-ui, -apple-system, monospace">Accepted?</text>
+  </g>
+
+  <rect x="560" y="360" width="250" height="40" rx="8" fill="#0d5f5b" stroke="#22a39a"/>
+  <text x="685" y="385" text-anchor="middle" fill="#e9fffc" font-size="13" font-family="system-ui, -apple-system, monospace">Unlock chat and create conversation</text>
+
+  <rect x="90" y="360" width="250" height="40" rx="8" fill="#6f2f2f" stroke="#df6a6a"/>
+  <text x="215" y="385" text-anchor="middle" fill="#ffeaea" font-size="13" font-family="system-ui, -apple-system, monospace">Keep status pending or mark declined</text>
+
+  <line x1="450" y1="82" x2="450" y2="106" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="162" x2="450" y2="170" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="396" y1="214" x2="340" y2="316" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="504" y1="214" x2="560" y2="316" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="685" y1="344" x2="685" y2="345" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="641" y1="388" x2="340" y2="380" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="685" y1="432" x2="685" y2="400" stroke="#9da7b3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="300" y="270" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">No</text>
+  <text x="575" y="270" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">Yes</text>
+  <text x="595" y="372" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">Yes</text>
+  <text x="468" y="402" fill="#9da7b3" font-size="12" font-family="system-ui, -apple-system, monospace">No</text>
+</svg>
